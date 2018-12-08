@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\coin.cs" />
+    <Compile Include="Assets\ScoreTextScript.cs" />
     <Compile Include="Assets\Tonguejump.cs" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/someone/Documents/GitHub/TongueRunner-A-C-Others/Tongue Jumper/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
