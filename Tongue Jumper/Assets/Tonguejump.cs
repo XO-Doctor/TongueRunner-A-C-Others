@@ -14,9 +14,10 @@ public class Tonguejump : MonoBehaviour {
     public float distancefromy;
     public float distancefromx;
     public Camera cam;
+    public Animator animator;
     // Use this for initialization
     void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
@@ -27,7 +28,7 @@ public class Tonguejump : MonoBehaviour {
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 10000 * Time.deltaTime);
         playerpos = player.transform.position;
         distance = Vector3.Distance(transform.position, player.transform.position);
-        tongue.transform.localScale = new Vector3 (distance * 5, 1, 1);
+        tongue.transform.localScale = new Vector3 (distance * 25, 1, 1);
         distancefromx = (transform.position.x + player.transform.position.x);
         distancefromy = (transform.position.y + player.transform.position.y);
         tongue.transform.position = new Vector3(distancefromx /2, distancefromy / 2, 0);
@@ -35,7 +36,7 @@ public class Tonguejump : MonoBehaviour {
         float anglet = Mathf.Atan2(directiont.y, directiont.x) * Mathf.Rad2Deg;
         Quaternion rotationt = Quaternion.AngleAxis(anglet, Vector3.forward);
         tongue.transform.rotation = Quaternion.Slerp(transform.rotation, rotationt, 10000 * Time.deltaTime);
-        cam.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -30);
+        cam.transform.position = new Vector3(player.transform.position.x, 0, -30);
         if (Input.GetMouseButtonDown(0))
         {
             holding = true;
@@ -46,6 +47,14 @@ public class Tonguejump : MonoBehaviour {
             holding = false;
             joint.enabled = false;
         }
+        if (Input.GetMouseButtonDown(0) | this.animator.GetCurrentAnimatorStateInfo(0).IsName("opening"))
+        {
+            animator.SetFloat("opening", 1);
+        }
+        else
+        {
+            animator.SetFloat("opening", -1);
+        }
         if (holding == true)
         {
             transform.position += transform.right * Time.deltaTime * 10;
@@ -55,6 +64,10 @@ public class Tonguejump : MonoBehaviour {
         {
             transform.position = playerpos;
             col.enabled = false;
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+
         }
     }
 }
