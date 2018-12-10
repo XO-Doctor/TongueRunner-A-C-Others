@@ -7,16 +7,17 @@ public class Tonguejump : MonoBehaviour {
     public GameObject player;
     public bool holding;
     public Vector3 playerpos;
-    public FixedJoint2D joint;
+    public SpringJoint2D joint;
     public Collider2D col;
     public float distance;
     public GameObject tongue;
     public float distancefromy;
     public float distancefromx;
     public Camera cam;
+    public Animator animator;
     // Use this for initialization
     void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
@@ -35,7 +36,7 @@ public class Tonguejump : MonoBehaviour {
         float anglet = Mathf.Atan2(directiont.y, directiont.x) * Mathf.Rad2Deg;
         Quaternion rotationt = Quaternion.AngleAxis(anglet, Vector3.forward);
         tongue.transform.rotation = Quaternion.Slerp(transform.rotation, rotationt, 10000 * Time.deltaTime);
-        cam.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -30);
+        cam.transform.position = new Vector3(player.transform.position.x, 0, -30);
         if (Input.GetMouseButtonDown(0))
         {
             holding = true;
@@ -46,6 +47,14 @@ public class Tonguejump : MonoBehaviour {
             holding = false;
             joint.enabled = false;
         }
+        if (Input.GetMouseButtonDown(0) | this.animator.GetCurrentAnimatorStateInfo(0).IsName("opening"))
+        {
+            animator.SetFloat("opening", 1);
+        }
+        else
+        {
+            animator.SetFloat("opening", -1);
+        }
         if (holding == true)
         {
             transform.position += transform.right * Time.deltaTime * 10;
@@ -55,6 +64,10 @@ public class Tonguejump : MonoBehaviour {
         {
             transform.position = playerpos;
             col.enabled = false;
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+
         }
     }
 }

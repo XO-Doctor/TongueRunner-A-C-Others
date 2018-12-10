@@ -1,18 +1,16 @@
 fileFormatVersion: 2
-guid: 761df50ee4e1f5e49979692f917c3578
-timeCreated: 1544177315
+guid: 6a9ba76cf4bb116478f2495909006edd
+timeCreated: 1544308262
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 1
-    21300002: 2
-    21300004: 3
-    21300006: 4
-    21300008: 5
-    21300010: 6
-    21300012: 7
-    21300014: 8
-    21300016: 9
+    21300000: pixil-frame-0 (2)_0
+    21300002: open4
+    21300004: open5
+    21300006: pixil-frame-0 (2)_3
+    21300008: closed1
+    21300010: closed2
+    21300012: closed3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -89,13 +87,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1
+      name: pixil-frame-0 (2)_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 68
-        width: 29
-        height: 29
+        x: 2
+        y: 111
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,13 +101,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 2
+      name: open4
       rect:
         serializedVersion: 2
-        x: 37
-        y: 68
-        width: 29
-        height: 29
+        x: 35
+        y: 111
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,13 +115,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 3
+      name: open5
       rect:
         serializedVersion: 2
         x: 68
-        y: 68
-        width: 29
-        height: 29
+        y: 111
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,13 +129,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 4
+      name: pixil-frame-0 (2)_3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 37
-        width: 29
-        height: 29
+        x: 101
+        y: 111
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,13 +143,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 5
+      name: closed1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 38
-        width: 29
-        height: 29
+        x: 134
+        y: 111
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,13 +157,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 6
+      name: closed2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 37
-        width: 29
-        height: 29
+        x: 167
+        y: 111
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,41 +171,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 7
+      name: closed3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 4
-        width: 29
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: 8
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 4
-        width: 29
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: 9
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 4
-        width: 29
-        height: 29
+        x: 200
+        y: 111
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
