@@ -7,7 +7,7 @@ public class Tonguejump : MonoBehaviour {
     public GameObject player;
     public bool holding;
     public Vector3 playerpos;
-    public FixedJoint2D joint;
+    public SpringJoint2D joint;
     public Collider2D col;
     public float distance;
     public GameObject tongue;
@@ -28,7 +28,7 @@ public class Tonguejump : MonoBehaviour {
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 10000 * Time.deltaTime);
         playerpos = player.transform.position;
         distance = Vector3.Distance(transform.position, player.transform.position);
-        tongue.transform.localScale = new Vector3 (distance * 25, 1, 1);
+        tongue.transform.localScale = new Vector3 (distance * 5, 1, 1);
         distancefromx = (transform.position.x + player.transform.position.x);
         distancefromy = (transform.position.y + player.transform.position.y);
         tongue.transform.position = new Vector3(distancefromx /2, distancefromy / 2, 0);
