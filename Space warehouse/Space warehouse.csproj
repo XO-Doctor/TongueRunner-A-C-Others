@@ -283,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\bullet.cs" />
+    <Compile Include="Assets\cloud.cs" />
     <Compile Include="Assets\fhdsgcfuds.cs" />
     <Compile Include="Assets\inventorycards.cs" />
     <Compile Include="Assets\prefabsforspace\Shoot.cs" />

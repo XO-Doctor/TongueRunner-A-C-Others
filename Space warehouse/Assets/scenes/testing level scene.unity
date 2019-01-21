@@ -258,8 +258,10 @@ GameObject:
   m_Component:
   - component: {fileID: 43084160}
   - component: {fileID: 43084159}
+  - component: {fileID: 43084161}
+  - component: {fileID: 43084162}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,12 +318,49 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43084158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.76, y: 2.59, z: 0}
+  m_LocalPosition: {x: -3.26, y: 3.3, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &43084161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43084158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e274227b072d1234c9673f166d8e38de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lg1: {fileID: 21300006, guid: c563996dc35effb45b8ff1fcdf70f0a4, type: 3}
+  lg2: {fileID: 21300004, guid: c563996dc35effb45b8ff1fcdf70f0a4, type: 3}
+  ls: {fileID: 21300008, guid: c563996dc35effb45b8ff1fcdf70f0a4, type: 3}
+  l: {fileID: 21300000, guid: c563996dc35effb45b8ff1fcdf70f0a4, type: 3}
+  player: {fileID: 1550753844}
+  sr: {fileID: 43084159}
+--- !u!50 &43084162
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43084158}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &52368522
 Prefab:
   m_ObjectHideFlags: 0
