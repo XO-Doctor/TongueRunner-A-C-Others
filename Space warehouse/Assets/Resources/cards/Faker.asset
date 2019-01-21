@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110298d306e794f8fe9316f15992d8, type: 3}
+  m_Name: Faker
+  m_EditorClassIdentifier: 
+  name: Orbwings
+  desc: Design used to boost head forward into the action
+  id: 0
+  singleid: 0
+  part: {fileID: 1902485382143506, guid: 302746f9f6e31eb4885b9940f48ddf83, type: 2}
+  type: 2
+  singlewingid: 2

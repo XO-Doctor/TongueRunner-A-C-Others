@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110298d306e794f8fe9316f15992d8, type: 3}
+  m_Name: Basic Wings
+  m_EditorClassIdentifier: 
+  name: basic wings
+  desc: Simple wings to get you going
+  id: 111111
+  singleid: 0
+  part: {fileID: 1664298363212138, guid: f05e1b5e2f1568f488803486be320fb0, type: 2}
+  type: 2
+  singlewingid: 1

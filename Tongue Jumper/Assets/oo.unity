@@ -499,7 +499,7 @@ MonoBehaviour:
   player: {fileID: 1398845897}
   holding: 0
   playerpos: {x: 0, y: 0, z: 0}
-  joint: {fileID: 1221697286}
+  joint: {fileID: 0}
   col: {fileID: 1221697285}
   distance: 0
   tongue: {fileID: 870458632}
@@ -579,8 +579,8 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.000000059604645}
   serializedVersion: 2
   m_Radius: 0.08325297
---- !u!231 &1221697286
-SpringJoint2D:
+--- !u!254 &1221697286
+RelativeJoint2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -588,16 +588,15 @@ SpringJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1398845901}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 2.0150733
-  m_DampingRatio: 1
-  m_Frequency: 22.99
+  m_MaxForce: 10000
+  m_MaxTorque: 10000
+  m_CorrectionScale: 0.3
+  m_AutoConfigureOffset: 1
+  m_LinearOffset: {x: 0.442, y: 1.966}
+  m_AngularOffset: 0
 --- !u!50 &1221697287
 Rigidbody2D:
   serializedVersion: 4
@@ -630,6 +629,7 @@ GameObject:
   - component: {fileID: 1398845901}
   - component: {fileID: 1398845900}
   - component: {fileID: 1398845902}
+  - component: {fileID: 1398845903}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -728,7 +728,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &1398845902
 Animator:
   serializedVersion: 3
@@ -746,6 +746,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1398845903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1398845897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3617421a1098aa64ab94a37924dbac60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1398845901}
 --- !u!1 &1645618164
 GameObject:
   m_ObjectHideFlags: 0

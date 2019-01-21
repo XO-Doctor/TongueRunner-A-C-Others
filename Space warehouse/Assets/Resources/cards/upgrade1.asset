@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22110298d306e794f8fe9316f15992d8, type: 3}
+  m_Name: upgrade1
+  m_EditorClassIdentifier: 
+  name: Re enforced base
+  desc: Simple model with re enforced armour
+  id: 112212
+  singleid: 1
+  part: {fileID: 1581398556662756, guid: dbca3f1a17c8dcb4d85da90083168734, type: 2}
+  type: 1
+  singlewingid: 0
